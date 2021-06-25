@@ -55,13 +55,7 @@ body ul {
   display: flex;
   flex-direction: column;
 }
-/* Illustration SVG CSS */
-.illus {
-  position: absolute;
-  right: 0;
-  top: 50px;
-  width: 300px;
-}
+
 
 /* Navbar CSS */
 .navbar {
@@ -349,11 +343,7 @@ body ul {
     margin-left: 0;
     padding: 50px 30px;
   }
-  /* Illustration SVG CSS */
-  .illus {
-    top: 15px;
-    width: 200px;
-  }
+
   /* Navbar CSS */
   .navbar {
     position: fixed;
