@@ -9,7 +9,7 @@
   --blue: #6cabff;
   --blueL: #3174d0;
   --fFamily: "Poppins", sans-serif;
-  --darkShadowSm: 6px 6px 15px rgba(211, 211, 211, 0.158);
+  --darkShadowSm: 4px 4px 15px rgba(211, 211, 211, 0.158);
   --darkShadowLg: 2px 2px 10px rgba(211, 211, 211, 0.158);
 }
 
@@ -37,6 +37,21 @@ body ul {
   list-style-type: none;
 }
 
+.particles-js-canvas-el {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+
+#particles-js{
+  height: 100%;
+}
+
 .title {
   font-size: 82px;
   color: var(--blue);
@@ -55,8 +70,6 @@ body ul {
   display: flex;
   flex-direction: column;
 }
-
-
 /* Navbar CSS */
 .navbar {
   position: fixed;
@@ -295,6 +308,7 @@ body ul {
 .projects .cardRow .card {
   width: 45%;
   margin: 10px;
+  position: relative;
 }
 
 .projects .cardRow .card img {
@@ -307,6 +321,31 @@ body ul {
 .projects .cardRow .card:hover img {
   transform: scale(1.02);
   box-shadow: 2px 2px 25px #ffffff2c;
+}
+
+.projects .cardRow .card:hover video {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 25px #ffffff2c;
+}
+
+.projects .cardRow .card .inner-text {
+  background-color: var(--yellow);
+  color: var(--dark);
+  box-shadow: var(--darkShadowLg);
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+.projects .cardRow .card .inner-text:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 25px #ffffff2c;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Contact CSS */
@@ -343,7 +382,11 @@ body ul {
     margin-left: 0;
     padding: 50px 30px;
   }
-
+  /* Illustration SVG CSS */
+  .illus {
+    top: 15px;
+    width: 200px;
+  }
   /* Navbar CSS */
   .navbar {
     position: fixed;
@@ -414,7 +457,6 @@ body ul {
     width: 100%;
     font-size: 20px;
     line-height: 30px;
-    text-align: left;
   }
 
   /* Skills CSS */
